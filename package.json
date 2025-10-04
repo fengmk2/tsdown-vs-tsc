@@ -1,0 +1,19 @@
+{
+  "name": "tsdown-vs-tsc",
+  "version": "1.0.0",
+  "description": "Comparison of TypeScript build tools: tsdown vs tsc",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsdown src/index.ts",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["typescript", "tsdown", "tsc", "build-tools"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tsdown": "^0.15.6",
+    "typescript": "^5.9.3"
+  }
+}
