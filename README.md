@@ -63,6 +63,27 @@ tsdown bundles all TypeScript files into a single optimized JavaScript file:
 - Input: `src/index.ts` and dependencies
 - Output: `dist/index.js`
 
+## tsdown build output missing types
+
+The tsdown build output is missing the types `import './types.ts'`.
+
+```ts
+// dist/index.d.ts
+
+//#region src/index.d.ts
+declare function main(): void;
+//#endregion
+export { main };
+```
+
+```ts
+// dist-tsc/index.d.ts
+
+import './types.ts';
+export declare function main(): void;
+```
+
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details
