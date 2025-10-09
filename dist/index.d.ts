@@ -1,4 +1,4 @@
-import "./types-B0ZeHNGo.js";
+import "./types-_8Ni1WEK.js";
 
 //#region src/index.d.ts
 declare function main(): void;

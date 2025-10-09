@@ -1,1 +1,3 @@
-import 'utility';
+export interface Foo {
+  bar: string;
+}

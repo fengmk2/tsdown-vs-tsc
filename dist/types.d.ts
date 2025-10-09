@@ -1,1 +1,2 @@
-import "./types-B0ZeHNGo.js";
+import { Foo } from "./types-_8Ni1WEK.js";
+export { Foo };
