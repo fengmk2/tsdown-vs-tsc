@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Comparison of TypeScript build tools: tsdown vs tsc",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist-bundle/index.js",
   "scripts": {
-    "build-bundle": "tsdown",
+    "build-bundle": "tsdown --out-dir dist-bundle",
     "build-unbundle": "tsdown --unbundle --out-dir dist-unbundle",
     "build-tsc": "tsc -b --clean && tsc -b",
     "build": "npm run build-unbundle && npm run build-tsc && npm run build-bundle"
@@ -24,8 +24,8 @@
     "typescript": "^5.9.3",
     "unplugin-unused": "^0.5.3"
   },
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "module": "./dist-bundle/index.js",
+  "types": "./dist-bundle/index.d.ts",
   "exports": {
     ".": "./src/index.ts",
     "./types": "./src/types.ts",
@@ -33,8 +33,8 @@
   },
   "publishConfig": {
     "exports": {
-      ".": "./dist/index.js",
-      "./types": "./dist/types.js",
+      ".": "./dist-bundle/index.js",
+      "./types": "./dist-bundle/types.js",
       "./package.json": "./package.json"
     }
   },

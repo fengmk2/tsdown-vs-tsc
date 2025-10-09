@@ -12,7 +12,7 @@ npm run build
 
 tsdown + bundle build output:
 - Input: `src/index.ts` and dependencies
-- Output: `dist/index.js` and `dist/index.d.ts`
+- Output: `dist-bundle/index.js` and `dist-bundle/index.d.ts`
 
 tsdown + unbundle build output:
 - Input: `src/index.ts` and dependencies
@@ -38,6 +38,17 @@ export { main };
 
 import './types.ts';
 export declare function main(): void;
+```
+
+```ts
+// dist-bundle/index.d.ts
+
+import "./types-_8Ni1WEK.js";
+
+//#region src/index.d.ts
+declare function main(): void;
+//#endregion
+export { main };
 ```
 
 
