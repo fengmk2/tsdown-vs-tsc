@@ -22,7 +22,7 @@ tsc build output:
 - Input: `src/index.ts` and dependencies
 - Output: `dist-tsc/index.js` and `dist-tsc/index.d.ts`
 
-The tsdown build output is missing the types `import './types.ts'`.
+The tsdown + unbundle build output is missing the types `import './types.ts'`.
 
 ```ts
 // dist-unbundle/index.d.ts
