@@ -1,5 +1,3 @@
-import "./types-B0ZeHNGo.js";
-
 //#region src/index.d.ts
 declare function main(): void;
 //#endregion

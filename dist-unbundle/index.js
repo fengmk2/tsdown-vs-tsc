@@ -1,5 +1,5 @@
-import "./types-KhljM6tv.js";
-import { add, greet, multiply } from "./utils-D6LyHvv-.js";
+import "./types.js";
+import { add, greet, multiply } from "./utils.js";
 
 //#region src/index.ts
 console.log("TypeScript Project with tsdown");
