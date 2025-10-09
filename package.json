@@ -5,10 +5,10 @@
   "type": "module",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsdown",
+    "build-bundle": "tsdown",
     "build-unbundle": "tsdown --unbundle --out-dir dist-unbundle",
     "build-tsc": "tsc -b --clean && tsc -b",
-    "test": "npm run build-unbundle && npm run build-tsc && npm run build"
+    "build": "npm run build-unbundle && npm run build-tsc && npm run build-bundle"
   },
   "keywords": [
     "typescript",

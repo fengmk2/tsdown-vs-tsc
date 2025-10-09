@@ -4,9 +4,13 @@
 
 When building a project using tsdown + unbundle, the output files lack the type declaration file `import './types.ts'`, whereas building with tsc will generate the type declaration files.
 
-## Build Output
+## Reproduce Build Output
 
-tsdown bundles all TypeScript files into a single optimized JavaScript file:
+```bash
+npm run build
+```
+
+tsdown + bundle build output:
 - Input: `src/index.ts` and dependencies
 - Output: `dist/index.js` and `dist/index.d.ts`
 
