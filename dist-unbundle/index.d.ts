@@ -1,3 +1,5 @@
+import "./types.js";
+
 //#region src/index.d.ts
 declare function main(): void;
 //#endregion

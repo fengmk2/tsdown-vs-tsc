@@ -51,6 +51,38 @@ declare function main(): void;
 export { main };
 ```
 
+## Solution
+
+Set `sideEffects: true` in `tsdown.config.ts`.
+
+See [this issue](https://github.com/rolldown/tsdown/issues/533#issuecomment-3465207879) for more details.
+
+```ts
+// tsdown.config.ts
+
+export default defineConfig({
+  entry: 'src/**/*.ts',
+  dts: {
+    sourcemap: true,
+    sideEffects: true,
+  },
+});
+```
+
+This will force tsdown to include the type declaration files in the output.
+
+```ts
+// dist-unbundle/index.d.ts
+
+import "./types.js";
+
+//#region src/index.d.ts
+declare function main(): void;
+//#endregion
+export { main };
+//# sourceMappingURL=index.d.ts.map
+```
+
 
 ## License
 
