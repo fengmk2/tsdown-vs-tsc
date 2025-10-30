@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":[],"sources":["../src/index.ts"],"sourcesContent":["import './types.ts';\n\n// Export the main function\nexport function main(): void {\n  console.log('\\nProject built successfully with tsdown!');\n}\n\nmain();\n"],"mappings":";;;AAGA,SAAgB,OAAa;AAC3B,SAAQ,IAAI,4CAA4C;;AAG1D,MAAM"}

@@ -4,3 +4,4 @@ interface Foo {
 }
 //#endregion
 export { Foo };
+//# sourceMappingURL=types.d.ts.map

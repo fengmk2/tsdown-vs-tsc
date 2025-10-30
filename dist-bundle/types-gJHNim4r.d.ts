@@ -3,4 +3,5 @@ interface Foo {
   bar: string;
 }
 //#endregion
-export { Foo };
+export { Foo as t };
+//# sourceMappingURL=types-gJHNim4r.d.ts.map

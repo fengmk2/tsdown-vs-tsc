@@ -8,3 +8,4 @@ main();
 
 //#endregion
 export { main };
+//# sourceMappingURL=index.js.map

@@ -2,12 +2,15 @@ import { defineConfig } from 'tsdown';
 
 export default defineConfig({
   entry: 'src/**/*.ts',
-  dts: true,
+  dts: {
+    sourcemap: true,
+    sideEffects: false,
+  },
   // FIXME: unbundle is not working as expected
   // unbundle: true,
-  unused: {
-    level: 'error',
-  },
+  // unused: {
+  //   level: 'error',
+  // },
   exports: {
     devExports: true,
   },

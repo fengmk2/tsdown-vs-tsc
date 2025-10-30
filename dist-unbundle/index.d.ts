@@ -2,3 +2,4 @@
 declare function main(): void;
 //#endregion
 export { main };
+//# sourceMappingURL=index.d.ts.map

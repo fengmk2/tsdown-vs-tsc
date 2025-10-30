@@ -10,7 +10,8 @@
     "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
     "rewriteRelativeImportExtensions": true,
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "isolatedDeclarations": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist-tsc", "dist", "dist-unbundle"]
